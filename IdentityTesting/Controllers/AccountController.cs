@@ -9,6 +9,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
 using IdentityTesting.Models;
+using IdentityTesting.DAL;
 
 namespace IdentityTesting.Controllers
 {
