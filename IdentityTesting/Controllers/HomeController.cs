@@ -15,7 +15,8 @@ namespace IdentityTesting.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            //Typical change from GitHub
+            ViewBag.Message = "This is to test ASP.NET Identity (as well as Visual Studio integration with Git, which is something you're not gonna see in the application code it self)";
 
             return View();
         }
