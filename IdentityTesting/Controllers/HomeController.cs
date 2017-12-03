@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IdentityTesting.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,9 +17,13 @@ namespace IdentityTesting.Controllers
         public ActionResult About()
         {
             //Typical change from GitHub
-            ViewBag.Message = "This is to test ASP.NET Identity (as well as Visual Studio integration with Git, which is something you're not gonna see in the application code it self)";
+            var model = new AboutModel
+            {
+                BasicDescription = "This is to test ASP.NET Identity",
+                MoreDescription = "(as well as Visual Studio integration with Git, which is something you're not gonna see in the application code it self)"
+            };
 
-            return View();
+            return View(model);
         }
 
         public ActionResult Contact()
